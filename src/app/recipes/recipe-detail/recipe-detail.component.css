@@ -1,0 +1,10 @@
+.RecipeImage {
+  height: 200px;
+  width: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

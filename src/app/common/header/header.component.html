@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="cursor-pointer navbar-brand" >Recipe Book</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active" >
+          <a class="cursor-pointer nav-link"  routerLink="/recipes">
+            Recipe
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" >
+          <a class="cursor-pointer nav-link "  routerLink="shopping-list" >
+            Shopping List
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown" appDropDown #dropDown="appDropDown">
+          <a class="cursor-pointer nav-link dropdown-toggle" >
+            Manage
+          </a>
+          <div class="dropdown-menu" [ngClass]="{show: dropDown.show}" >
+            <a class="cursor-pointer dropdown-item" >Action</a>
+            <a class="cursor-pointer dropdown-item" >Another action</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

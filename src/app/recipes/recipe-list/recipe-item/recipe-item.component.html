@@ -1,0 +1,15 @@
+<div class="list-group">
+  <a
+    href="#" class="list-group-item list-group-item-action"
+    [routerLink]="['/recipes', id]"
+    [routerLinkActive]="'active'"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    {{recipe.name}}
+    <img
+    class="ListCardImage"
+    [alt]="recipe.name"
+    [src]="recipe.imagePath"
+  />
+  </a>
+</div>

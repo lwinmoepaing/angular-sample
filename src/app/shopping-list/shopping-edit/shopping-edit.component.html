@@ -1,0 +1,24 @@
+<div class="row my-3">
+  <div class="col-md-4">
+    <form>
+      <div class="form-group">
+        <input type="text"
+          class="form-control form-control-sm"
+          placeholder="Enter Name"
+          #inputNameField
+        >
+      </div>
+      <div class="form-group">
+        <input type="number"
+          class="form-control form-control-sm"
+          placeholder="Enter Amount"
+          #inputAmountField
+        >
+      </div>
+
+      <button type="button" class="btn btn-primary  btn-sm mr-2" (click)="addNewIngredient()">Add</button>
+      <button type="button" class="btn btn-outline-danger  btn-sm mr-2">Del</button>
+      <button type="button" class="btn btn-outline-primary btn-sm mr-2">Clear</button>
+    </form>
+  </div>
+</div>
